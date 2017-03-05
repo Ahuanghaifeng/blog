@@ -1,0 +1,3 @@
+# blog
+基于Python和Django的blog项目
+注意创建templates后再创建一个项目名字的目录以免多个项目templates起冲突
