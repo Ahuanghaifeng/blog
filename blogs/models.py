@@ -6,3 +6,6 @@ class Article(models.Model):
     title = models.CharField(max_length=32, default='Title')
     # 定义blog的内容，内容可以为空
     content = models.TextField(null=True)
+
+    def __str__(self):
+        return self.title
