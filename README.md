@@ -19,3 +19,12 @@ Admin是Django自带的管理界面，已在settings.py中自动生成。
 管理员界面英文修改为中文，默认为‘en-us' 修改为‘zh-Hans’或者'zh-Hant'(繁体)。
 想要操作应用，先将应用进行配置，在应用目录下的admin.py中引入自身的models模块，并将导入的模块进行注册admin.site.register(模块)。
 针对admin界面的 Article object，可通过增加一个方法返回self.title。python3中用__str__(self),python2中用__unicode__(self)
+
+
+之前获取单独的一个数据的语法
+article = models.Article.objects.get(pk=1)
+获取全部的数据 article = models.Article.objects.all()
+模板的For循环
+{%for xx in xx%}
+HTML语句
+{%endfor%}
