@@ -28,3 +28,8 @@ article = models.Article.objects.get(pk=1)
 {%for xx in xx%}
 HTML语句
 {%endfor%}
+
+
+模型：是以创建的Models,其中包含一个自动生成的ID
+视觉：根据表的ID进行获取数据，article = models.Article.object.get(pk=article_id)，并通过render函数将数据返回，html中再通article.title和article.content进行显示。
+控制：urls.py通过正则表达进行限制r'^article/(?P<article_id>[0-9]+)'.P大写，0-9中间不是逗号。
