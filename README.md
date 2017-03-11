@@ -33,3 +33,10 @@ HTML语句
 模型：是以创建的Models,其中包含一个自动生成的ID
 视觉：根据表的ID进行获取数据，article = models.Article.object.get(pk=article_id)，并通过render函数将数据返回，html中再通article.title和article.content进行显示。
 控制：urls.py通过正则表达进行限制r'^article/(?P<article_id>[0-9]+)'.P大写，0-9中间不是逗号。
+
+注册Admin配置类：
+class ArticleAdmin(admin.ModelAdmin)
+注册：admin.site.register(models.Article,ArticleAdmin)
+显示其他字段
+list_diplay = ('title','content')   （就是models里的字段名）具体看代码
+然后在进行数据移植，就可以显示了。效果见csdn博客http://blog.csdn.net/u013692888/article/details/61416403
