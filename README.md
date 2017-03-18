@@ -10,7 +10,7 @@ Models是ORM 数据对象映射
 如图所示
 ![](https://github.com/Ahuanghaifeng/blog/raw/master/K%604%7DAMGGI%25SZRB8%5DJ%60DE37M.png)
 浏览器输入loaclhost:8000执行效果如图
-![](https://github.com/Ahuanghaifeng/blog/blob/master/%7B(2%60OE_H7%7BVVQFRNU%40G((6O.png）
+![](https://github.com/Ahuanghaifeng/blog/raw/master/%7B(2%60OE_H7%7BVVQFRNU%40G((6O.png）
 
 
 Admin是Django自带的管理界面，已在settings.py中自动生成。
